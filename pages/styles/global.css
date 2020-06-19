@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Staatliches&display=swap");
+
+:root {
+  --cor-primary: #4aa870;
+  --cor-secondary: #333333;
+  --cor-dark: #444444;
+  --cor-light: #6a6a6a;
+  --cor-text: #dedede;
+
+  --font-featured: "Staatliches", cursive;
+  --font-content: "Roboto Condensed", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--cor-text);
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+p {
+  font-family: var(--font-featured);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+span {
+  font-family: var(--font-featured);
+  letter-spacing: 2px;
+}
+
+span {
+  font-size: 50px;
+}
+
+body {
+  background: var(--cor-secondary);
+  margin-top: 12vh;
+  display: flex;
+  flex-direction: column;
+}
