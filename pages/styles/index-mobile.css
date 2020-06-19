@@ -1,0 +1,8 @@
+@media (max-width: 600px) {
+  .header {
+    justify-content: space-between;
+  }
+  .nav {
+    display: none;
+  }
+}
