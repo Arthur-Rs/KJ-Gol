@@ -1,3 +1,5 @@
+@import url("../animations/menus.css");
+
 .menu-user {
   background-color: var(--cor-dark);
   position: fixed;
@@ -7,6 +9,25 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  z-index: 10;
+  transform: translateX(400px);
+}
+
+.menu {
+  transform: translateX(-400px);
+  background-color: var(--cor-dark);
+  position: fixed;
+  padding: 5px;
+  box-shadow: 0px 5px 5px #222;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  z-index: 10;
+  width: 300px;
+}
+
+.menu a {
+  font-size: 24px;
 }
 
 .menu-user span {
@@ -68,14 +89,4 @@
   width: 24px;
   height: 24px;
   margin-right: 3px;
-}
-
-.animate-open {
-  transition: 0.6s;
-  transform: translateX(0px);
-}
-
-.animate-close {
-  transition: 0.6s;
-  transform: translateX(400px);
 }

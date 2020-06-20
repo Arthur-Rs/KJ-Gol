@@ -1,0 +1,19 @@
+.animate-open-user-menu {
+  transition: 0.6s;
+  transform: translateX(0px) !important;
+}
+
+.animate-close-user-menu {
+  transition: 0.6s;
+  transform: translateX(400px) !important;
+}
+
+.animate-open-main-menu {
+  transition: 0.6s;
+  transform: translateX(0px) !important;
+}
+
+.animate-close-main-menu {
+  transition: 0.6s;
+  transform: translateX(-400px) !important;
+}
