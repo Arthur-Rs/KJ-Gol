@@ -8,6 +8,10 @@
   flex-grow: 1;
 }
 
+.mobile {
+  display: none;
+}
+
 .table {
   width: 450px;
   height: 650px;

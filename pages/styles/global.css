@@ -54,4 +54,15 @@ body {
   margin-top: 10vh;
   display: flex;
   flex-direction: column;
+  scrollbar-color: var(--cor-dark);
+  scrollbar-width: 5px;
 }
+
+::-webkit-scrollbar {
+  background: var(--cor-dark);
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--cor-light);
+}
+
