@@ -1,18 +1,31 @@
+// ==== GLOBAL ====\\
+
+// ==== MENUS ====\\
+
 const userMenu = document.querySelector("#menu-user");
 const userMenuBtn = document.querySelector("#menu-user-button");
 let userMenuIsOpen = false;
 
 userMenuBtn.addEventListener("click", () => {
   if (!userMenuIsOpen) {
-    userMenu.classList.add("animate-open-user-menu");
-    userMenu.classList.remove("animate-close-user-menu");
+    CheckAnyMenuOpen() && CloseMainMenu();
+    OpenUserMenu();
   } else {
-    userMenu.classList.add("animate-close-user-menu");
-    userMenu.classList.remove("animate-open-user-menu");
+    CloseUserMenu();
   }
 
   userMenuIsOpen = !userMenuIsOpen;
 });
+
+const OpenUserMenu = () => {
+  userMenu.classList.add("animate-open-user-menu");
+  userMenu.classList.remove("animate-close-user-menu");
+};
+
+const CloseUserMenu = () => {
+  userMenu.classList.add("animate-close-user-menu");
+  userMenu.classList.remove("animate-open-user-menu");
+};
 
 const mainMenu = document.querySelector("#main-menu");
 const mainMenuBtn = document.querySelector("#main-menu-button");
@@ -20,12 +33,29 @@ let mainMenuIsOpen = false;
 
 mainMenuBtn.addEventListener("click", () => {
   if (!mainMenuIsOpen) {
-    mainMenu.classList.add("animate-open-main-menu");
-    mainMenu.classList.remove("animate-close-main-menu");
+    CheckAnyMenuOpen() && CloseUserMenu();
+    OpenMainMenu();
   } else {
-    mainMenu.classList.add("animate-close-main-menu");
-    mainMenu.classList.remove("animate-open-main-menu");
+    CloseMainMenu();
   }
 
   mainMenuIsOpen = !mainMenuIsOpen;
 });
+
+const OpenMainMenu = () => {
+  mainMenu.classList.add("animate-open-main-menu");
+  mainMenu.classList.remove("animate-close-main-menu");
+};
+
+const CloseMainMenu = () => {
+  mainMenu.classList.add("animate-close-main-menu");
+  mainMenu.classList.remove("animate-open-main-menu");
+};
+
+// ==== MORE FUNCTIONS ==== \\
+
+const CheckAnyMenuOpen = () => {
+  const menus = [mainMenuIsOpen, userMenuIsOpen];
+
+  return menus.includes(true) ? true : false;
+};
