@@ -5,15 +5,15 @@
   .nav {
     display: none;
   }
+  .table {
+    height: 510px;
+  }
   .mobile {
     display: flex;
   }
   .menu {
-    -x: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-  .menu:focus {
-    scroll-snap-type: none;
+    max-width: 100%;
+    max-height: calc(100% - 10vh);
+    overflow: scroll;
   }
 }

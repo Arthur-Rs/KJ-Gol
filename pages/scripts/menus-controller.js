@@ -14,7 +14,6 @@ userMenuBtn.addEventListener("click", () => {
     CloseUserMenu();
   }
 
-  CheckAnyMenuOpen();
   userMenuIsOpen = !userMenuIsOpen;
 });
 
@@ -37,10 +36,9 @@ mainMenuBtn.addEventListener("click", () => {
     CheckAnyMenuOpen() && CloseUserMenu();
     OpenMainMenu();
   } else {
-    CloseMainMenu();
+    CloseMainMenu(CheckAnyMenuOpen());
   }
 
-  CheckAnyMenuOpen();
   mainMenuIsOpen = !mainMenuIsOpen;
 });
 
@@ -59,13 +57,5 @@ const CloseMainMenu = () => {
 const CheckAnyMenuOpen = () => {
   const menus = [mainMenuIsOpen, userMenuIsOpen];
   const anyOpen = menus.includes(true);
-  ScroolPageController(anyOpen);
   return anyOpen;
-};
-
-const ScroolPageController = (active) => {
-  if (innerWidth > 700) {
-    return;
-  }
-  document.body.style.overflow = active ? "scroll" : "hidden";
 };
