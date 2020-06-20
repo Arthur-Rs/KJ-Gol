@@ -9,18 +9,21 @@
   </head>
   <body>
     <header class="header">
-      <div><span class="icon"></span></div>
+      <div><span class="iconify icon" data-icon="eva:menu-fill"></span></div>
       <div><h1>KJ-GOl</h1></div>
       <nav class="nav">
         <div class="button-header"><a href="#">PRINCIPAL</a></div>
-        <div class="button-header"><a href="#">PRINCIPAL</a></div>
-        <div class="button-header"><a href="#">PRINCIPAL</a></div>
-        <div class="button-header"><a href="#">PRINCIPAL</a></div>
-        <div class="button-header"><a href="#">PRINCIPAL</a></div>
-        <div class="button-header"><a href="#">PRINCIPAL</a></div>
-        <div class="button-header"><a href="#">PRINCIPAL</a></div>
+        <div class="button-header"><a href="#">TORNEIO</a></div>
+        <div class="button-header"><a href="#">JOGO</a></div>
+        <div class="button-header"><a href="#">RANKING</a></div>
+        <div class="button-header"><a href="#">SELEÇÃO</a></div>
+        <div class="button-header"><a href="#">PAINEL</a></div>
+        <div class="button-header"><a href="#">TAREFAS</a></div>
       </nav>
-      <div><span class="icon"></span></div>
+      <div id="menu-user-button">
+        <span class="iconify icon" data-icon="carbon:user-avatar-filled">
+        </span>
+      </div>
     </header>
     <section class="top-tables">
       <div class="table">
@@ -28,11 +31,11 @@
         <div class="table-content"></div>
       </div>
       <div class="table">
-        <header class="table-header"><span>TOP HORA</span></header>
+        <header class="table-header"><span>TOP RODADA</span></header>
         <div class="table-content"></div>
       </div>
       <div class="table">
-        <header class="table-header"><span>TOP HORA</span></header>
+        <header class="table-header"><span>TOP TEMPORADA</span></header>
         <div class="table-content"></div>
       </div>
     </section>
@@ -46,5 +49,67 @@
         <h2>Chutes</h2>
       </div>
     </section>
+
+    <article id="menu-user" class="menu-user">
+      <div class="info-content">
+        <div>
+          <span class="iconify icon-user" data-icon="carbon:user-avatar-filled">
+          </span>
+        </div>
+        <div class="info-username-content">
+          <span class="username">Arthur Reis</span>
+          <div class="info-vip-content">
+            <span
+              class="iconify icon-vip"
+              data-icon="ri:vip-line"
+              data-inline="false"
+            ></span>
+            <span>
+              5 dias
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="info-box">
+        <span>Próximo Nível</span>
+        <span
+          class="iconify icon-info"
+          data-icon="ic:round-help-center"
+          data-inline="false"
+        ></span>
+      </div>
+      <div class="info-box">
+        <span>Usando Agora</span>
+        <span
+          class="iconify icon-info"
+          data-icon="bx:bxs-info-square"
+          data-inline="false"
+        ></span>
+      </div>
+      <div class="info-box">
+        <span>HORA: </span>
+        <span>8</span>
+      </div>
+      <div class="info-box">
+        <span>RODADA</span>
+        <span>83</span>
+      </div>
+      <div class="info-box">
+        <span>TEMPORADA</span>
+        <span>2.5753</span>
+      </div>
+      <div class="info-box">
+        <span
+          class="iconify icon-info"
+          data-icon="dashicons:money-alt"
+          data-inline="false"
+        ></span>
+        <span>138.828</span>
+      </div>
+    </article>
+
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="./pages/scripts/mobile-controller.js"></script>
+    <script src="./pages/scripts/menus-controller.js"></script>
   </body>
 </html>

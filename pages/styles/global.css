@@ -51,7 +51,7 @@ span {
 
 body {
   background: var(--cor-secondary);
-  margin-top: 12vh;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
 }
