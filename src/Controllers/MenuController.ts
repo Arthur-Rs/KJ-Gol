@@ -1,9 +1,6 @@
-// ==== GLOBAL ====\\
-
 // ==== MENUS ====\\
-
-const userMenu = document.querySelector("#menu-user");
-const userMenuBtn = document.querySelector("#menu-user-button");
+const userMenu = <HTMLElement>document.querySelector("#menu-user");
+const userMenuBtn = <HTMLElement>document.querySelector("#menu-user-button");
 let userMenuIsOpen = false;
 
 userMenuBtn.addEventListener("click", () => {
@@ -27,8 +24,8 @@ const CloseUserMenu = () => {
   userMenu.classList.remove("animate-open-user-menu");
 };
 
-const mainMenu = document.querySelector("#main-menu");
-const mainMenuBtn = document.querySelector("#main-menu-button");
+const mainMenu = <HTMLElement>document.querySelector("#main-menu");
+const mainMenuBtn = <HTMLElement>document.querySelector("#main-menu-button");
 let mainMenuIsOpen = false;
 
 mainMenuBtn.addEventListener("click", () => {
@@ -36,7 +33,7 @@ mainMenuBtn.addEventListener("click", () => {
     CheckAnyMenuOpen() && CloseUserMenu();
     OpenMainMenu();
   } else {
-    CloseMainMenu(CheckAnyMenuOpen());
+    CloseMainMenu();
   }
 
   mainMenuIsOpen = !mainMenuIsOpen;
