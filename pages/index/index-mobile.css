@@ -1,0 +1,44 @@
+@media (max-width: 600px) {
+  .header {
+    justify-content: space-between !important;
+  }
+  .nav {
+    display: none !important;
+  }
+  .top-tables {
+    margin: 20px 2vw !important;
+  }
+  .table {
+    height: 600px !important;
+  }
+  .table:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .row .box span {
+    font-size: 18px !important;
+  }
+
+  .row .box .icon {
+    width: 18px !important;
+  }
+
+  .row .box-name span {
+    max-width: 40vw !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+  .table span {
+    font-size: 28px !important;
+  }
+  .mobile {
+    display: flex !important;
+  }
+  .menu {
+    max-width: 100% !important;
+    max-height: calc(100% - 10vh) !important;
+    overflow: scroll !important;
+  }
+}

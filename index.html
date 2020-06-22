@@ -2,9 +2,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/styles/global.css" />
-    <link rel="stylesheet" href="./pages/styles/index.css" />
-    <link rel="stylesheet" href="./pages/styles/index-mobile.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="./pages/global/global.css" />
+    <link rel="stylesheet" href="./pages/index/index.css" />
     <title>KJ-GOl</title>
   </head>
   <body>
@@ -30,15 +31,21 @@
     <section class="top-tables">
       <div class="table">
         <header class="table-header"><span>TOP HORA</span></header>
-        <div class="table-content"></div>
+        <div class="table-content">
+          <ul id="hour-table" class="column"></ul>
+        </div>
       </div>
       <div class="table">
         <header class="table-header"><span>TOP RODADA</span></header>
-        <div class="table-content"></div>
+        <div class="table-content">
+          <ul id="round-table" class="column"></ul>
+        </div>
       </div>
       <div class="table">
         <header class="table-header"><span>TOP TEMPORADA</span></header>
-        <div class="table-content"></div>
+        <div class="table-content">
+          <ul id="season-table" class="column"></ul>
+        </div>
       </div>
     </section>
     <section class="records section">
@@ -73,6 +80,14 @@
         </div>
       </div>
       <div class="info-box">
+        <span
+          class="iconify icon-info"
+          data-icon="dashicons:money-alt"
+          data-inline="false"
+        ></span>
+        <span>138.828</span>
+      </div>
+      <div class="info-box">
         <span>Próximo Nível</span>
         <span
           class="iconify icon-info"
@@ -100,14 +115,6 @@
         <span>TEMPORADA</span>
         <span>2.5753</span>
       </div>
-      <div class="info-box">
-        <span
-          class="iconify icon-info"
-          data-icon="dashicons:money-alt"
-          data-inline="false"
-        ></span>
-        <span>138.828</span>
-      </div>
     </aside>
 
     <aside id="main-menu" class="menu">
@@ -133,7 +140,7 @@
         <a>PAINEL</a>
       </div>
 
-      <div class="info-box">
+      <div class="info-box mobile">
         <a>TAREFAS</a>
       </div>
       <div class="info-box">
@@ -157,7 +164,6 @@
     </aside>
 
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-    <script src="./pages/scripts/mobile-controller.js"></script>
-    <script src="./pages/scripts/menus-controller.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

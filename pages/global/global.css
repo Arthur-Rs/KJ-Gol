@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Staatliches&display=swap");
+@import url("./animations/menus.css");
+@import url("./components/header.css");
+@import url("./components/menus.css");
 
 :root {
   --cor-primary: #4aa870;
@@ -9,6 +12,8 @@
 
   --font-featured: "Staatliches", cursive;
   --font-content: "Roboto Condensed", sans-serif;
+
+  --height-header: 10vh;
 }
 
 * {
@@ -31,7 +36,7 @@ li {
 }
 
 p {
-  font-family: var(--font-featured);
+  font-family: var(--font-content);
 }
 
 h1,
@@ -51,7 +56,7 @@ span {
 
 body {
   background: var(--cor-secondary);
-  margin-top: 10vh;
+  margin-top: var(--height-header);
   display: flex;
   flex-direction: column;
   scrollbar-color: var(--cor-dark);
@@ -65,4 +70,3 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--cor-light);
 }
-

@@ -1,0 +1,155 @@
+@import url("./index-mobile.css");
+
+.top-tables {
+  display: flex;
+  margin: 20px 5vw;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.mobile {
+  display: none;
+}
+
+.table {
+  width: 420px;
+  height: 700px;
+  box-sizing: content-box;
+  margin: 10px;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.table:hover {
+  transform: translateY(-10px);
+  z-index: 0;
+}
+
+.table-header {
+  background-color: var(--cor-primary);
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: 0px 2px 5px #222;
+}
+
+.table-content {
+  background-color: var(--cor-dark);
+  width: 100%;
+  height: 90%;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 2px 5px #222;
+}
+
+.column {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.column:hover .row {
+  box-shadow: 0px 0px 5px var(--cor-secondary);
+}
+
+.row {
+  width: 100%;
+  height: calc(10% - 4.5px);
+  border-radius: 4px;
+  background-color: var(--cor-light);
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.row .box-name span {
+  max-width: 190px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-content);
+  font-weight: 400;
+}
+
+.row .box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.row .box div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.box-number {
+  width: 20px;
+}
+
+.box-number span {
+  text-align: center;
+}
+
+.row .icon {
+  width: 22px;
+  margin: 0px 5px;
+}
+
+.row span {
+  font-size: 22px;
+}
+
+.box-point {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.row:last-child {
+  border-radius: 4px 4px 8px 8px;
+  margin: 0px;
+}
+
+.section {
+  margin: 20px 0px;
+}
+
+.sub-title-box {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  position: relative;
+  margin: 20px 0px;
+}
+
+.sub-title-box h2 {
+  z-index: 2;
+  position: absolute;
+  font-size: 40px;
+  left: 5%;
+}
+
+.sub-title-box::after {
+  position: absolute;
+  transform: skewX(-15deg);
+  content: "";
+  left: -10px;
+  background-color: var(--cor-primary);
+  width: 60%;
+  height: 100%;
+  z-index: 1;
+  justify-self: center;
+  transition: 0.2s;
+  box-shadow: 0px 5px 5px #222;
+}
