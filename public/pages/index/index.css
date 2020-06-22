@@ -5,6 +5,7 @@
   margin: 20px 5vw;
   flex-wrap: wrap;
   flex-grow: 1;
+  justify-content: center;
 }
 
 .mobile {
@@ -12,7 +13,7 @@
 }
 
 .table {
-  width: 420px;
+  width: 450px;
   height: 700px;
   box-sizing: content-box;
   margin: 10px;

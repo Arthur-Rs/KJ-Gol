@@ -1,3 +1,3 @@
-import "./Controllers/MenuController.ts";
-import "./Controllers/TableController.ts";
+import "./Controllers/MenuController";
+import "./Controllers/TableController";
 import "./Controllers/MobileController";

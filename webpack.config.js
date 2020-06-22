@@ -2,7 +2,7 @@ module.exports = {
   entry: "./src/index.ts",
   output: {
     filename: "script.js",
-    path: __dirname + "./public",
+    path: __dirname + "/public",
   },
   devServer: {
     contentBase: __dirname + "/public",

@@ -17,7 +17,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "build": "babel --out-file public/bundle.js src/",
+    "build": "webpack --mode=production",
     "dev": "webpack-dev-server --mode=development -w"
   },
   "dependencies": {
